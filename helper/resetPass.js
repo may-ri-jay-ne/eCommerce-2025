@@ -11,7 +11,7 @@ const html=(verifyLink,firstName)=>{
                 font-family: Arial, sans-serif;
                 line-height: 1.6;
                 color: #333333;
-                background-color: #2c2c2c; /* Dark background */
+                background-color: lightgrey ; /* Dark background */
                 margin: 0;
                 padding: 0;
             }
@@ -25,10 +25,10 @@ const html=(verifyLink,firstName)=>{
                 background-color: #f4f4f4; /* Light grey background */
             }
             .header {
-                background: #333333;
+                background: grey;
                 padding: 20px;
                 text-align: center;
-                border-bottom: 1px solid #ddd;
+                border-bottom: 1px solid #5e2525;
                 color: #ffffff;
                 border-radius: 10px 10px 0 0;
             }
@@ -42,7 +42,7 @@ const html=(verifyLink,firstName)=>{
             }
             .button {
                 display: inline-block;
-                background-color: #28a745; /* Green background */
+                background-color: rgba(125, 17, 192, 0);
                 color: #ffffff;
                 padding: 15px 30px;
                 font-size: 18px;
@@ -52,7 +52,7 @@ const html=(verifyLink,firstName)=>{
                 transition: background-color 0.3s ease;
             }
             .button:hover {
-                background-color: #218838;
+                background-color: #88217f;
             }
             .footer {
                 background: #333333;
@@ -68,16 +68,16 @@ const html=(verifyLink,firstName)=>{
     <body>
         <div class="container">
             <div class="header">
-                <h1>WELCOME ON BOARD!</h1>
+                <h1>PASSWORD RESET!</h1>
             </div>
             <div class="content">
                 <p>Hello ${firstName},</p>
-                <p>Thank you for joining our Ecommerce site</p>
-                <p>Please click the button below to verify your account:</p>
+                <p> Seem you forget your Password</p>
+                <p>Please click the button below to reset your password</p>
                 <div class="button-container">
                     <a href="${verifyLink}" class="button">Verify My Account</a>
                 </div>
-                <p>If you did not sign up on our platform, kindly ignore this email.</p>
+                <p>kindly ignore this email. <br> if you didn't request for a password reset</p>
                 <p>Best regards,<br>Team 3</p>
             </div>
             <div class="footer">

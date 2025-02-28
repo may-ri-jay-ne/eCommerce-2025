@@ -2,7 +2,7 @@ const multer = require('multer');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb)=>{ //cd is used to check for error. before sending to croudinary we must first save to folder
-    cb(null, './upload')
+    cb(null, './imageUpload')
     },
     filename:(req, file, cb)=>{
         cb(null, file.originalname)
