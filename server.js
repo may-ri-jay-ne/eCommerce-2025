@@ -9,6 +9,8 @@ const categoryRouter = require('./routes/categoryRoutes');
 const routerProduct = require('./routes/ProductRoutes');
 const PORT = 2602;
 
+const cors = require('cors');
+
 const app = express();
 app.use(express.json());
 

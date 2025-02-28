@@ -6,7 +6,7 @@ const upload = require ('../helper/multer')
 
 routerProduct.post('/catprods/:id', upload.single("photo"), createProduct);
 routerProduct.get('/pro/:id', getProductById)
-routerProduct.get('/product',getProducts);
+routerProduct.get('/product', getProducts);
 routerProduct.patch('/product/:id',upload.single("photo"), changeDP);
 
 routerProduct.put('/product/:id', updateProduct);
